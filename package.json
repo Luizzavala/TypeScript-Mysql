@@ -1,12 +1,20 @@
 {
-  "name": "typescript",
+  "name": "typescript-mysql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luizzavala/TypeScript-Mysql.git"
+  },
+  "author": "@Luismigeel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luizzavala/TypeScript-Mysql/issues"
+  },
+  "homepage": "https://github.com/Luizzavala/TypeScript-Mysql#readme"
 }
