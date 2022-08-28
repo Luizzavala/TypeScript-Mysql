@@ -1,7 +1,7 @@
 import express from "express";
 import connection from "./db/config";
 import { json, urlencoded } from "body-parser";
-import todoRouter from "./routes/todos";
+import Router from "./routes/todos";
 
 const app = express();
 
@@ -9,7 +9,7 @@ app.use(json());
 
 app.use(urlencoded({ extended: true }));
 
-app.use("/todos", todoRouter);
+app.use("/todos", Router);
 
 app.use((
   err: Error,

@@ -4,20 +4,20 @@ import {
   createToDo,
   deleteToDo,
   getAllToDo,
+  updateTodo,
   getTodoById,
-  updateTodo
-} from "../controller/todo";
+} from "../controllers/todo";
 
-const todoRouter = Router();
+const router = Router();
 
-todoRouter.post("/", createToDo);
+router.post("/", createToDo);
 
-todoRouter.get("/", getAllToDo);
+router.get("/", getAllToDo);
 
-todoRouter.get("/:id", getTodoById);
+router.get("/:id", getTodoById);
 
-todoRouter.put("/:id", updateTodo);
+router.put("/:id", updateTodo);
 
-todoRouter.delete("/:id", deleteToDo);
+router.delete("/:id", deleteToDo);
 
-export default todoRouter;
+export default router;
