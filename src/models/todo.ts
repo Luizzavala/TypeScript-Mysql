@@ -12,7 +12,6 @@ DataType
 })
 
 export class Todos extends Model {
-
   @Column({
     type: DataType.STRING,
     allowNull: false,
@@ -24,4 +23,4 @@ export class Todos extends Model {
     allowNull: false,
   })
   description!: string;
-};
+}
